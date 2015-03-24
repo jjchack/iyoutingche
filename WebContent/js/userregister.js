@@ -1,0 +1,56 @@
+/**
+ * 注册界面的表单验证
+ */
+$(document).ready(function(){
+	$("#Registerform").validate({
+		rules:{
+			user_name:{
+				required:true,
+				minlength:5
+			},
+			user_email:{
+				required:true,
+				email:true
+			},
+			user_password:{
+				required:true,
+				minlength:6
+			},
+			user_repassword:{
+				required:true,
+				equalTo: "#password"
+			}
+		},
+		messages:{
+			user_name:{
+				required:"请输入用户名",
+				minlength:jQuery.validator.format("输入不小于5位数的用户名"),
+			},
+			user_email:{
+				required:"请输入正确的邮箱地址",
+				email:"邮箱格式不正确"
+			},
+			user_password:{
+				required:"请输入密码",
+				minlength:jQuery.validator.format("输入不小于6位数的密码"),
+			},
+			user_repassword:{
+				required:"请输入确认密码",
+				equalTo: "两次输入的密码不一致"
+			}
+		},
+		submitHandler:function(form){
+			$(form).ajaxSubmit({
+				url:'UserRegistSer',
+				type:'POST',
+				success:function(data){
+					if(data=="true"){
+						$("#info").append("<b>该邮箱已被注册</b><br/>");
+					}/*else{
+						location.href = "index.jsp";
+					}*/
+				}
+			});
+		},
+	});
+});

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>mailVerifySer</servlet-name>
+    <servlet-class>com.iyoutingche.web.userServlet.mailVerifySer</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserRegistSer</servlet-name>
+    <servlet-class>com.iyoutingche.web.userServlet.UserRegistSer</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserCheckLoginSer</servlet-name>
+    <servlet-class>com.iyoutingche.web.userServlet.UserCheckLoginSer</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>userModifySer</servlet-name>
+    <servlet-class>com.iyoutingche.web.userServlet.userModifySer</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FindDepotByKeys</servlet-name>
+    <servlet-class>com.iyoutingche.web.depotservlet.FindDepotByKeys</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FindSpaceSer</servlet-name>
+    <servlet-class>com.iyoutingche.web.spaceservlet.FindSpaceSer</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>userFindByEmail</servlet-name>
+    <servlet-class>com.iyoutingche.web.userServlet.userFindByEmail</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserCenterSer</servlet-name>
+    <servlet-class>com.iyoutingche.web.usercenterservlet.UserCenterSer</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>userJsonModifySer</servlet-name>
+    <servlet-class>com.iyoutingche.web.usercenterservlet.userJsonModifySer</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>userJsonModifyImg</servlet-name>
+    <servlet-class>com.iyoutingche.web.usercenterservlet.userJsonModifyImg</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>userModifyPassword</servlet-name>
+    <servlet-class>com.iyoutingche.web.usercenterservlet.userModifyPassword</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OrderPcar</servlet-name>
+    <servlet-class>com.iyoutingche.web.orderservlet.OrderPcar</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminLoginSer</servlet-name>
+    <servlet-class>com.iyoutingche.web.adminservlet.AdminLoginSer</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminRegister</servlet-name>
+    <servlet-class>com.iyoutingche.web.adminservlet.AdminRegister</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>mailVerifySer</servlet-name>
+    <url-pattern>/mailVerifySer</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserRegistSer</servlet-name>
+    <url-pattern>/UserRegistSer</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserCheckLoginSer</servlet-name>
+    <url-pattern>/UserCheckLoginSer</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>userModifySer</servlet-name>
+    <url-pattern>/userModifySer</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindDepotByKeys</servlet-name>
+    <url-pattern>/FindDepotByKeys</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindSpaceSer</servlet-name>
+    <url-pattern>/FindSpaceSer</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>userFindByEmail</servlet-name>
+    <url-pattern>/userFindByEmail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserCenterSer</servlet-name>
+    <url-pattern>/UserCenterSer</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>userJsonModifySer</servlet-name>
+    <url-pattern>/userJsonModifySer</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>userJsonModifyImg</servlet-name>
+    <url-pattern>/userJsonModifyImg</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>userModifyPassword</servlet-name>
+    <url-pattern>/userModifyPassword</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderPcar</servlet-name>
+    <url-pattern>/OrderPcar</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminLoginSer</servlet-name>
+    <url-pattern>/AdminLoginSer</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminRegister</servlet-name>
+    <url-pattern>/AdminRegister</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

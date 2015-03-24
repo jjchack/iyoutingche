@@ -1,0 +1,70 @@
+@CHARSET "UTF-8";
+body{
+	background-color: #f6f6f6;
+	margin: 0;
+}
+#iyoutingche-register-topa{
+	width: 1000px;
+	height: 70px;
+	margin: 5px 0 0 120px;
+	color: #666666;
+}
+#iyoutingche-register-toph2{
+	margin: 20px 0 0 20px;
+	float: left;
+	font-size: 21px;
+	color: color: #666666;
+}
+#iyoutingche-register-topr{
+	margin: 20px 0 15px 0;
+	float: right;
+	font-size: 21px;
+}
+#iyoutingche-register-formgroup{
+	width: 400px;
+	height: 30px;
+	margin:30px 0 0 20px;
+}
+#iyoutingche-register-lable{
+	width: 100px;
+	height: 30px;
+	font-size: 20px;
+	color: color: #666666;
+	float: left;
+}
+#iyoutingche-register-formgroup input{
+	width: 250px;
+	height: 30px;
+}
+#iyoutingche-register-formgroupinput{
+	width: 120px;
+	height: 35px;
+	margin:30px 0 0 20px;
+}
+#iyoutingche-register-formgroupb{
+	width: 120px;
+	height: 35px;
+	margin:20px 0 0 100px;
+}
+.topl{
+	border-width: 0px 0px 3px 0px;
+	border-style: solid;
+	border-color:#CCCCCC;
+	margin-top: 20px;
+}
+#iyoutingche-register-topa img{
+	float: left;
+	width: 80px;
+	height: 80px;
+}
+#iyoutingche-r{
+	float: left;
+	border-width: 0px 0px 0px 1px;
+	border-style: solid;
+	margin: 5px 0 0 15px;
+	border-color:#CCCCCC;
+	height: 70px;
+}
+#iyoutingche-register-m{
+	margin:10px 0 0 0 ;
+}
