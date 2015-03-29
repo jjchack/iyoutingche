@@ -20,13 +20,19 @@ import com.iyoutingche.web.util.IPTimeStamp;
 import com.iyoutingche.web.util.TimeStamp;
 
 import java.sql.Connection;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 
 public class Test {
 	public static void main(String[] args) {
-		InPcarAdmin ipa = new PcarAdminImpl();
+		SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+		Date date=new Date();
+		System.out.println(sdf.format(date).toString());
+		
+		
+		/*InPcarAdmin ipa = new PcarAdminImpl();
 		try {
 			Pcar_Admin admin = new Pcar_Admin(TimeStamp.UUID(),
 					"JAY阿卧", "男", "824337531@qq.com", "18939171376", "123456");
@@ -35,6 +41,6 @@ public class Test {
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
+		}*/
 	}
 }

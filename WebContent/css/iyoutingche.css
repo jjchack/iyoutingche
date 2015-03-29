@@ -129,10 +129,12 @@ body {
 	height: 40px;
 }
 
-#show_mapinfo{
-	width: 400px;
+#show_mapinfo{	
+	height: 300px;	
+}
+.Pcar_info{
 	height: 300px;
-	margin-left: 300px;
+	
 }
 .iyoutingche-button{
 	text-align:center;

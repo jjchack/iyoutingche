@@ -46,15 +46,19 @@ public class FindSpaceSer extends HttpServlet {
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
-		response.setCharacterEncoding("utf-8");
-		
+		response.setCharacterEncoding("utf-8");		
 		String depotcode = request.getParameter("depotcode");
-		InPcarSpace ips = new pcarSpaceImpl();
+		String x = request.getParameter("x");
+		String y = request.getParameter("y");
+		/*InPcarSpace ips = new pcarSpaceImpl();
 		InPcar_Order ipo = new Pcar_OrderImpl();
 		List<Pcar_Space> Space_list = ips.FindByDepot(depotcode);
 		List<Pcar_Order> Order_list = ipo.FindByDepotCode(depotcode);
 		request.setAttribute("Space_list", Space_list);
-		request.setAttribute("Order_list", Order_list);
+		request.setAttribute("Order_list", Order_list);*/
+		request.setAttribute("depotcode", depotcode);
+		request.setAttribute("x", x);
+		request.setAttribute("y", y);
 		request.getRequestDispatcher("depot/FindSpaces.jsp").forward(request, response);
 	}
 }

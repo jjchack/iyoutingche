@@ -21,22 +21,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<link rel="stylesheet" type="text/css" href="css/iyoutingche-personalcenter.css">
 	<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
 	<script type="text/javascript" src="js/jquery.cookie.js"></script>
-	<script type="text/javascript">
-	/**
-	 * 个人中心 退出按钮
-	 */
-		function exit() {
-			if(window.confirm('你确定要退出该系统吗？')){
-				$.cookie('cookieName',null);
-			//	alert("cookie"+$.cookie('cookieName'));
-				//$.removeCookie('cookieName');
-                return true;
-             }else{
-                //alert("取消");
-                return false;
-            }
-	}
-	</script>
   </head>
   <body>
 	<div id="iyoutingche-personalcenter-topa">
@@ -47,7 +31,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<span class="nav-text text-overflow-hidden">当前用户:${email }</span>
 			</div>
 			<div id="iyoutingche-personalcenter-right">
-				 <a onclick="if(exit()){href='index.jsp'}" class="pull-right btn btn-primary nav-btn" target="_parent">退出</a>
+				<a href='/iyoutingche'   target='_top'><button class='btn btn-primary nav-btn' id='quit'>退出</button></a>
 			</div>
 		</div>
 	</div>	

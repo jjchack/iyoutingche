@@ -29,7 +29,7 @@ $(function(){
 		  						"<div id='div1'>"+
 			  						"<div id='div2'>"+
 		  								"<span>"+name+"</span>"+
-		  								"<a href='FindSpaceSer?depotcode="+depot_code+"' target='_blank'>查看详情</a>"+
+		  								"<a href='FindSpaceSer?depotcode="+depot_code+"&x="+x+"&y="+y+"' target='_blank'>查看详情</a>"+
 	  								"</div>"+
 	  								"<div id='div3'>"+
 		  								"<a href='FindSpaceSer?depotcode="+depot_code+"' target='_blank'><img src='"+img+"'/></a>"+

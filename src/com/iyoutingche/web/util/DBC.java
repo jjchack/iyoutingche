@@ -8,8 +8,7 @@ import java.sql.SQLException;
 
 public class DBC {
 	private static String driver="com.mysql.jdbc.Driver";
-	private static String url = "jdbc:mysql://localhost:3306/pcar?user=root&password=mysqladmin"+
-								"&useUnicode=true&characterEncoding=UTF-8";
+	private static String url = "jdbc:mysql://localhost:3306/pcar?user=root&password=";
 	static {
 		try {
 			Class.forName(driver);
