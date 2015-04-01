@@ -54,7 +54,7 @@ public class UserRegistSer extends HttpServlet {
 		  boolean flag = ipu.addVerify(verify);
 		  
 		  if(flag){
-			  System.out.println("添加到了临时表中");
+		//	  System.out.println("添加到了临时表中");
 			  response.sendRedirect("index.jsp");
 		  }
 		 }else{

@@ -14,4 +14,5 @@ public interface InPcar_Depot {
 	public boolean AddDepot(Pcar_Depot depot);   //添加停车场
 	public boolean ModifyDepot(Pcar_Depot depot);  //修改停车场
 	public boolean DelDepot(String depot_code);		//删除停车场
+	public boolean ModifyDepotImg(String depot_code,String depot_img); //通过二维码修改停车场的图片
 }

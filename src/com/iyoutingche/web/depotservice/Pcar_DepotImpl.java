@@ -212,5 +212,22 @@ public class Pcar_DepotImpl implements InPcar_Depot{
 		}
 		return depot;
 	}
-
+	@Override
+	public boolean ModifyDepotImg(String depot_code, String depot_img) {
+		boolean flag = false;
+		Connection conn = null;
+		PreparedStatement pst = null;
+		conn = DBC.getConnection();
+		String sql = "update pcar_depot set depot_img='"+depot_img+"' where depot_code='"+depot_code+"'";
+		try {
+			pst = conn.prepareStatement(sql);
+			if(pst.executeUpdate()>0){
+				flag = true;
+			}
+			DBC.close(pst, conn);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return flag;
+	}
 }

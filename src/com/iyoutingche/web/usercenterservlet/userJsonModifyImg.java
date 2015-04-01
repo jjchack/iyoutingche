@@ -15,6 +15,8 @@ import org.json.JSONObject;
 
 import sun.reflect.ReflectionFactory.GetReflectionFactoryAction;
 
+import com.iyoutingche.web.depotservice.InPcar_Depot;
+import com.iyoutingche.web.depotservice.Pcar_DepotImpl;
 import com.iyoutingche.web.usermodel.PcarUser;
 import com.iyoutingche.web.userservice.InPcarUser;
 import com.iyoutingche.web.userservice.PcarUserImpl;
@@ -44,6 +46,8 @@ public class userJsonModifyImg extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		
 		String email = (String)request.getSession().getAttribute("email");
+		String depot_code = (String)request.getSession().getAttribute("depot_code");
+		System.out.println("depot_code="+depot_code);
 		System.out.println("email=="+email);
 		//设置上传文件保存路径
 		String filePath = this.getServletContext().getRealPath("/img");
@@ -82,19 +86,19 @@ public class userJsonModifyImg extends HttpServlet {
 			} catch (Exception e) {
 				// TODO: handle exception
 			}
-			InPcarUser ipu = new PcarUserImpl();
-			boolean flag = ipu.ModifyEmail(email, disFile);
-			if(flag){
-				PcarUser user = ipu.FindUsersByEmail(email);
-				JSONObject json = new JSONObject();
-					try {
-						json.put("userimg", user.getUser_img());
-						//System.out.println("userimg"+json.toString());
-						out.print(json.toString());
-					} catch (JSONException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
+				InPcarUser ipu = new PcarUserImpl();
+				boolean flag = ipu.ModifyEmail(email, disFile);
+				if(flag){
+					PcarUser user = ipu.FindUsersByEmail(email);
+					JSONObject json = new JSONObject();
+						try {
+							json.put("userimg", user.getUser_img());
+							//System.out.println("userimg"+json.toString());
+							out.print(json.toString());
+						} catch (JSONException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
 					}
-				}
 	}
 }

@@ -24,24 +24,21 @@ public class AdminRegister extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		String adminname = request.getParameter("adminname");
 		String adminemail = request.getParameter("adminemail");
-		String adminpassword = request.getParameter("adminpassword");
 		String adminsex = request.getParameter("adminsex");
 		String adminphone = request.getParameter("adminphone");
 		
+		String adminpassword = "123456";
 		InPcarAdmin ipa = (InPcarAdmin) new PcarAdminImpl();
 		boolean flag = ipa.CheckRegister(adminemail);
 		if(flag){
-			out.print("已经注册过");
+			System.out.println("zhucl ");
+			out.print("n");
 		}else{
 			String adminid = TimeStamp.UUID();
 			Pcar_Admin admin = new Pcar_Admin(adminid, adminname, adminsex,
 					adminemail, adminphone, adminpassword);
 			boolean result = ipa.PcarAdminAdd(admin);
-			if(result){
-				response.sendRedirect("admin/adminLogin.jsp");
-			}else{
-				System.out.println("注册失败");
-			}
+			out.print(result);
 		}
 	}
 

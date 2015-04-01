@@ -175,17 +175,21 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				</form>
 			</div>
 			</div>
-			<div class="container">
-			<div id="iyoutingche-b">
+	<div class="container">
+		<div id="iyoutingche-b">
 			<div class="iyoutingche-button">
-			 <h4><span class="glyphicon glyphicon-search">搜索列表</span></h4>
+				<h4>
+					<span class="glyphicon glyphicon-search">搜索列表</span>
+				</h4>
 			</div>
-			<div class="iyoutingche-shezhi"><span class="glyphicon glyphicon-triangle-left"></span>百度地图</div>
-				<div class="row-fluid">
-					<div id="Pcar_left">
-					</div>
-					<div id="Map_Content"></div>
-				</div>
+			<div class="iyoutingche-shezhi">
+				<span class="glyphicon glyphicon-triangle-left"></span>百度地图
+			</div>
+			<div class="row-fluid">
+				<div id="Pcar_left"></div>
+				<div id="Map_Content"></div>
 			</div>
 		</div>
+		<div id="floater"><a href="admin/adminLogin.jsp">管理员通道</a></div>
+	</div>
 </html>

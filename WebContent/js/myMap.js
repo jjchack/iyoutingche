@@ -8,7 +8,6 @@ $(function(){
 		  }
 		  $.ajax({
 			  type:'POST',
-			  
 			  url:'FindDepotByKeys',
 			  data:{
 			  			keys: $("#address_1").val(),
@@ -29,10 +28,10 @@ $(function(){
 		  						"<div id='div1'>"+
 			  						"<div id='div2'>"+
 		  								"<span>"+name+"</span>"+
-		  								"<a href='FindSpaceSer?depotcode="+depot_code+"&x="+x+"&y="+y+"' target='_blank'>查看详情</a>"+
+		  								"<a href='FindSpaceSer?depotcode="+depot_code+"' target='_blank'>查看详情</a>"+
 	  								"</div>"+
 	  								"<div id='div3'>"+
-		  								"<a href='FindSpaceSer?depotcode="+depot_code+"' target='_blank'><img src='"+img+"'/></a>"+
+		  								"<a href='FindSpaceSer?depotcode="+depot_code+"' target='_blank'><img src='img/"+img+"'/></a>"+
 		  								"<div id='div4'>"+
 		  								"<p>总车位：</p>"+
 		  								"<p>剩余车位：</p>"+

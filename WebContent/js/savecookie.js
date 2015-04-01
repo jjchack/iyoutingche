@@ -34,9 +34,7 @@ $(document).ready(function(){
 						var email = $("#email").val();
 						//设置cookie
 					//	$.cookie('cookieName',email,{expires: 7,path:'/',secure: false,raw:false});  
-						$.cookie('cookieName',email,{
-							expires: 7,
-							});
+						$.cookie('cookieName',email,{expires: 7});
 					//	cookieSave = $.cookie('cookieName',email);
 						location.reload();
 					}else{
@@ -49,8 +47,8 @@ $(document).ready(function(){
 	/**
 	 * cookie保存账号
 	 */
-	//alert("cookie值"+$.cookie('cookieName'))$.cookie('cookieName')!="null" && $.cookie('cookieName')!=null;
-		if($.cookie('cookieName')){
+	//alert("cookie值"+$.cookie('cookieName'));
+		if($.cookie('cookieName')!="null" && $.cookie('cookieName')!=null){
 			$("#iyoutingche-topright").empty();
 			$("#iyoutingche-topleft").append("<a href='/iyoutingche'><button class='btn btn-primary nav-btn' id='quit'>退出</button></a>"+"<a href='userFindByEmail?email="+$.cookie('cookieName')+"'> " +
 				"欢迎您,"+$.cookie('cookieName')+" </a>");
@@ -62,9 +60,8 @@ $(document).ready(function(){
 	 */
 	$("#quit").click(function(){
 		 if(window.confirm('你确定要退出？')){
-			 //$.cookie('cookieName',null);
-			$.removeCookie('cookieName');
-			// $.cookie('cookieName', '', {expires: -1});
+			 $.cookie('cookieName',null);
+			// $.removeCookie('cookieName');
 		//	 alert("==="+cookieSave);
 		//	 location.reload();
              return true;

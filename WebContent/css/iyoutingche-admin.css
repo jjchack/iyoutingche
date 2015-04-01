@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+body{
+	background-color: #f6f6f6;
+	margin: 0;
+}
+#iyoutingche-personalcenter-topa{
+	height: 70px;
+	margin: 0;
+	background-color: #008AE3;
+}
+.nav-header.collapsed > span.glyphicon-chevron-toggle:before {
+    content: "\e114";
+}
+
+.nav-header > span.glyphicon-chevron-toggle:before {
+    content: "\e113";
+}
+.secondmenu a {
+    font-size: 12px;
+    color: #4A515B;
+    text-align: center;
+}
+
+.secondmenu li.active {
+    background-color: #eee;
+    border-color: #428bca;
+}
+#content {
+    margin: auto;
+    padding: 36px 0 0;
+    width: 920px;
+}

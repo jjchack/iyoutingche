@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -13,7 +12,6 @@ import com.iyoutingche.web.adminservice.InPcarAdmin;
 import com.iyoutingche.web.adminservice.PcarAdminImpl;
 
 public class AdminLoginSer extends HttpServlet {
-	private static final long serialVersionUID = 1L;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doPost(request, response);
@@ -28,12 +26,10 @@ public class AdminLoginSer extends HttpServlet {
 		
 		InPcarAdmin ipa = new PcarAdminImpl();
 		boolean flag = ipa.adminCheckLogin(adminemail, adminpassword);
-		System.out.println("falg==="+flag);
-		if(flag){
-			out.print("登录成功");
-		}else{
-			out.print("登录失败");
-		}
+			request.getSession().setAttribute("adminemail", adminemail);
+		//	System.out.println("admin=="+adminemail);
+			out.print(flag);
+			
 	}
 
 }

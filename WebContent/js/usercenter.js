@@ -1,13 +1,5 @@
 $(document).ready(function(){
 	
-	/*基本信息form表单提交
-	 * */
-	/*var hiddenpass = $("#hiddenpass").val();
-	var userpass = $("#userpass").val();   //原始密码
-	var newuserpass = $("#newuserpass").val();	//新密码
-	var newreuserpass = $("#newreuserpass").val();	//确定新密码
-*/	
-	
 	$("#baseInfoform").validate({
 		rules:{
 			userid: {
@@ -123,7 +115,7 @@ $(document).ready(function(){
 			type:"POST",
 			url:"userJsonModifyImg",
 			success: function(data){
-				alert(data);
+				//alert(data);
 				if(data=="false"){
 					alert("更改头像失败");
 				}else{

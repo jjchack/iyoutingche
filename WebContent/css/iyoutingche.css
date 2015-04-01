@@ -129,12 +129,10 @@ body {
 	height: 40px;
 }
 
-#show_mapinfo{	
-	height: 300px;	
-}
-.Pcar_info{
+#show_mapinfo{
+	width: 400px;
 	height: 300px;
-	
+	margin-left: 300px;
 }
 .iyoutingche-button{
 	text-align:center;
@@ -198,7 +196,29 @@ body {
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
           box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
 }
+#depotdiv{
+	width: 300px;
+	height: 50px;
+	margin-left: 500px;
+	margin-top: 50px;
+	float: right;
+}
+#depotdiv input{
+	width: 300px;
+	height: 30px;
+}
 .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
     .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
     background-color: #008ae3;
+ #floater{
+	 bottom: 35px;
+    cursor: pointer;
+    font-size: 12px;
+    height: 33px;
+    line-height: 25px;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    width: 30px;
+}
   

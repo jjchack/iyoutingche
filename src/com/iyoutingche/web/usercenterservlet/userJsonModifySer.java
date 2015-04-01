@@ -53,11 +53,6 @@ public class userJsonModifySer extends HttpServlet {
 	  	String userphone = (String)request.getParameter("userphone");
 	  	String usernumber = (String)request.getParameter("usernumber");
 	  	
-	//  	System.out.println("userJsonModifySer.java!修改成功前"+username);
-	  	/*email = new String(email.getBytes("iso8859-1"),"utf-8");
-	  	username = new String(username.getBytes("iso8859-1"),"utf-8");
-	  	usersex = new String(usersex.getBytes("iso8859-1"),"utf-8");
-	  	usernumber = new String(usernumber.getBytes("iso8859-1"),"utf-8");*/
 	  	PrintWriter out = response.getWriter();
 	  	InPcarUser ipu = new PcarUserImpl();
 	  	boolean flag;

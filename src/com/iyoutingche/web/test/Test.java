@@ -1,8 +1,11 @@
 package com.iyoutingche.web.test;
 
 import com.iyoutingche.web.adminmodel.Pcar_Admin;
+import com.iyoutingche.web.adminmodel.Pcar_Admin_P;
 import com.iyoutingche.web.adminservice.InPcarAdmin;
+import com.iyoutingche.web.adminservice.InPcar_P_Admin;
 import com.iyoutingche.web.adminservice.PcarAdminImpl;
+import com.iyoutingche.web.adminservice.Pcar_P_AdminImpl;
 import com.iyoutingche.web.depotmodel.Pcar_Depot;
 import com.iyoutingche.web.depotmodel.Pcar_Space;
 import com.iyoutingche.web.depotservice.InPcar_Depot;
@@ -20,27 +23,14 @@ import com.iyoutingche.web.util.IPTimeStamp;
 import com.iyoutingche.web.util.TimeStamp;
 
 import java.sql.Connection;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 
 public class Test {
 	public static void main(String[] args) {
-		SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
-		Date date=new Date();
-		System.out.println(sdf.format(date).toString());
-		
-		
-		/*InPcarAdmin ipa = new PcarAdminImpl();
-		try {
-			Pcar_Admin admin = new Pcar_Admin(TimeStamp.UUID(),
-					"JAY阿卧", "男", "824337531@qq.com", "18939171376", "123456");
-			boolean flag = ipa.CheckRegister("824337531@qq.com");
-			System.out.println("已经注册？"+flag);
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}*/
+		InPcar_Depot ipd = new Pcar_DepotImpl();
+		boolean flag = ipd.ModifyDepotImg("ad16bef8-9042-4e67-81b0-63e72448bc14", "nimi");
+		System.out.println("flag="+flag);
 	}
 }
